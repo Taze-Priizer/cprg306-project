@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -7,7 +8,9 @@ export default function Home() {
   return (
     <main>
       <h1 className="text-3xl">Diem's Resume</h1>
-      <li><Link href="./Resume/" className={linkStyles}>My Resume</Link></li>
+      <ul>
+        <li><Link href="./Resume/" className={linkStyles}>My Resume</Link></li>
+      </ul>
     </main>
     
   );
