@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <main>
-      <h1 className="text-3xl">Diem's Resume</h1>
+      <h1 className="text-3xl text-stone-400">Diem's Resume</h1>
       <ul>
         <li><Link href="./Resume/" className={linkStyles}>My Resume</Link></li>
       </ul>

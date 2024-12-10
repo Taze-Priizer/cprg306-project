@@ -11,7 +11,8 @@ export default function Page(){
         personAddress: {
             street:"",
             city: "Calgary", 
-            province: "Alberta"}
+            province: "Alberta"},
+        
     };
 
     let{
@@ -27,14 +28,18 @@ export default function Page(){
 
     return(
         <main>
-            <h1>Resume</h1>
-            <img src="C:\cprg306\cprg306-project\app\Resume\IMG_0558.jpg"></img>
-            <p>Name: {personName}</p>
+            <div className="flex rounded-t-lg bg-top-color sm:px-2 w-full">
+            <p className="font-bold text-heading sm:text-4xl text-2xl">Name: {personName}</p>
             <p>Certificate: {personCertificate}</p>
             <p>Age: {age}</p>
             <p>Phone Number: {contact}</p>
-            <p>Email: {email}</p>
+            <p className="text-align">Email: {email}</p>
             <p>{city}, <b>{province}</b></p>
+            </div>
+            <h2>Experience</h2>
+            <h2>Software Development at SAIT (2024-2025) </h2>
+            <h2>Skills</h2>
+            <h2>Database, Object-Oriented Programming, UI/UX, Software Analysis</h2>
 
         </main>
     );
